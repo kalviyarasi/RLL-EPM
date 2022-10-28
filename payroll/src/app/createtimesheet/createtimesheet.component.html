@@ -1,0 +1,103 @@
+<div class="container-fluid">
+<div class="container">
+
+    <h3 class="text-center" style="font-family: 'Prompt', sans-serif;font-size: 40px;">Create Timesheet</h3>
+    <div class="formreg">
+      <form #registertimesheet="ngForm" (ngSubmit) = "onSubmit()">
+        <div class="form-group adjustcom">
+            <label class="placead">EmpId</label>
+            <input type="text"  class="form-control" id="empId"  
+                 [(ngModel)] ="timesheet.empId " name="empId" required>
+                 
+        </div>
+    
+        <div class="form-group adjustcom">
+            <label class="placead">Date</label>
+            <input type="week" class="form-control" id="date" 
+                 [(ngModel)] ="timesheet.date " name="date" required>
+        </div>
+    
+        <div class="form-group adjustcom">
+            <label class="placead">InTime</label>
+            <input type="time" class="form-control" id="intime" 
+                 [(ngModel)] ="timesheet.inTime " name="inTime" required>
+        </div>
+    
+        <div class="form-group adjustcom">
+            <label class="placead">OutTime</label>
+            <input type="time" class="form-control" id="outTime" 
+                 [(ngModel)] ="timesheet.outTime " name="outTime" required>
+        </div>
+    
+        <div class="form-group adjustcom">
+            <label class="placead" for="regularTime">Select Regular Hours:</label>
+            <select class="form-control"  [(ngModel)]="timesheet.regularTime" name="regularTime" required> 
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+            </select>
+          </div>
+    
+        <div class="form-group adjustcom">
+            <label class="placead">BreakTime Hours</label>
+            <select class="form-control" id="breakTime" 
+                 [(ngModel)] ="timesheet.breakTime " name="breakTime" required>
+                 <option>1</option>
+                 <option>2</option>
+                 <option>3</option>
+                </select>
+        </div>
+    
+        <div class="form-group adjustcom">
+            <label class="placead" for="overtimeHours">Select OverTime Hours:</label>
+            <select class="form-control"  [(ngModel)]="timesheet.overtimeHours" name="overtimeHours" required>
+              <option>Nil</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+            </select>
+          </div>
+    
+          <div class="form-group adjustcom">
+            <label class="placead" for="totalHours">Select Total Hours:</label>
+            <select class="form-control"  [(ngModel)]="timesheet.totalHours" name="totalHours" required>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+          </div>
+          <div class="btns">
+        <button [disabled]="registertimesheet.form.invalid" class="btn btn-primary" type="submit">Submit</button><br><br>
+      </div>
+        <a class="backbtn" href="timesheetlist">Back</a>
+    </form>
+  </div>
+
+    </div>
+
+  </div>

@@ -1,0 +1,24 @@
+.salary
+{
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width:100%;
+    margin-right: 150px;
+   
+}
+ 
+a{
+    list-style: none;
+}
+h2{
+    color: black;
+    /* text-shadow: 2px 2px 4px rgb(170, 192, 45); */
+  }
+footer{
+    background:linear-gradient(grey,rgb(255,238,110)100%);
+    color:black;
+    padding-top: 2px;
+}

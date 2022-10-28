@@ -1,0 +1,72 @@
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://www.astecsolutions.com/wp-content/uploads/2016/01/Recruitment.jpg');
+    height: 100vh; background-repeat: no-repeat; background-size: cover; width:100%; background-attachment: fixed;">
+ 
+<br>
+<br>
+<h2 align="center" style="font-weight:bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">Work Schedule</h2>
+<br>
+<br>
+ 
+<div class="container">
+<table class ="table ">
+    <thead class="thead-dark" >
+        <tr>
+            <th>EmpId</th>
+            <th>StartDate</th>
+            <th>Shift</th>
+            <th>StartingTime</th>
+            <th>EndingTime</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody class="table-active" style="color:white;">
+        <tr>
+        <td> {{Schedule.empId}}</td>
+        <td> {{Schedule.date}}</td>
+        <td> {{Schedule.shift}}</td>
+        <td> {{Schedule.startingTime}}</td>
+        <td>{{Schedule.endTime}}</td>
+        <td>{{Schedule.duration}}</td>
+       
+        </tr>
+    </tbody>
+</table>
+<div class="position-absolute top-50 start-50 translate-middle">
+    <button class="btn btn-danger mr-5" (click)="Back()">Back</button>
+    </div>
+</div>
+ 
+</div>
+ 
+ 
+
+<!-- 
+<h2>Work Schedule</h2>
+<table class ="table table-stripped">
+    <thead>
+        <tr>
+            <th>EmpId</th>
+            <th>Start Date</th>
+            <th>Shift</th>
+            <th>StartingTIme</th>
+            <th>EndingTIme</th>
+            <th>Duration</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td> {{Schedule.empId}}</td>
+        <td> {{Schedule.date}}</td>
+        <td> {{Schedule.shift}}</td>
+        <td> {{Schedule.startingTime}}</td>
+        <td>{{Schedule.endTime}}</td>
+        <td>{{Schedule.duration}}</td>
+        <td>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button class="btn btn-danger" (click)="Back()">Back</button> -->

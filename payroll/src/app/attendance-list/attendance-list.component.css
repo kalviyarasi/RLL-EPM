@@ -1,0 +1,32 @@
+.catt
+{
+    margin-left: 30%;
+}
+
+.closebtns
+{
+   font-size: 20px;
+   color: red;
+}
+
+.btn
+{
+    border-radius: 30px;
+}
+
+table
+{
+    margin-top: 14px;
+    font-family: 'Merriweather Sans', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.content
+{
+    background-image: url("../../assets/att bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}

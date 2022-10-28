@@ -1,0 +1,66 @@
+.container-fluid
+{
+    background-image: url("../assets/New folder/about bg.jpg");
+    background-position: center;
+    background-size: contain;
+    height: 150vh;
+}
+
+.card
+{
+    border-radius: 10px;
+}
+
+.card-title
+{
+    background-color: rgba(91, 89, 89, 0.409);
+    font-family: 'Prompt', sans-serif;
+    color: rgba(240, 248, 255, 0.882);
+    border-radius: 20px;
+    padding: 9px;
+    font-size: 13px;
+}
+
+p
+{
+    font-weight: bold;
+    font-family: 'Prompt', sans-serif;
+
+}
+
+.h1
+{
+   
+    border-radius: 29px;
+}
+
+img
+{
+    
+    width: 100px;
+    border-radius: 30px;
+}
+
+.navbar-brand
+{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-family: 'Monoton', cursive;
+}
+
+.nav-link
+{
+    font-size: large;
+    width: 60px;
+    display: inline-flex;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.74);
+    border-radius: 18px;
+    margin-bottom: 10px;
+}
+
+.col-md
+{
+    
+}

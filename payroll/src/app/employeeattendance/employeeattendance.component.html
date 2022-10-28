@@ -1,0 +1,73 @@
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/Vv03xyNwg/light-business-background-with-abstract-elements-of-infographics_hieu4exqc__d_thumbnail-1080_01.png');
+    height: 100vh; background-repeat: no-repeat; background-size: cover; width:100%; background-attachment: fixed;">
+ 
+<br>
+<br>
+<h2 align="center" style="font-weight:bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Attendance List of Employee</h2>
+<br>
+<br>
+<div class="container">
+<table class="table"  style="margin-right:150px;">
+    <thead class="thead-dark" >
+        <tr>
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody class="table-active" style="color:white;">
+        <tr>
+        <td> {{attend.empId}}</td>
+        <td> {{attend.date}}</td>
+        <td> {{attend.status}}</td>
+       
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="position-absolute top-50 start-50 translate-middle">
+    <button class="btn btn-danger mr-5" (click)="Back()">Back</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<h2>Attendance List of Employee</h2>
+<table class ="table table-stripped">
+    <thead style="background-color: blueviolet;">
+        <tr>
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody style="background-color: aliceblue;">
+        <tr>
+        <td> {{attend.empId}}</td>
+        <td> {{attend.date}}</td>
+        <td> {{attend.status}}</td>
+        <td>
+        </td>
+        </tr>
+    </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;
+<button class="btn btn-danger" (click)="Back()">Back</button>
+ -->

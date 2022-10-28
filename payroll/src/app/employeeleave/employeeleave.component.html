@@ -1,0 +1,41 @@
+ 
+<div
+class="bg-image"
+style="
+  background-image: url('https://www.esquare.com.pk/images/hris/2.jpg');
+  height: 100vh; background-repeat: no-repeat; background-size: cover; width:100%; background-attachment: fixed;">
+
+<br>
+<br>
+<h2 align="center" style="font-weight:bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Employee Leave Details</h2>
+<br>
+<br>
+<div class="container">
+<table class ="table ">
+
+  <thead class="thead-dark">
+      <tr>
+          <th>EmpId</th>
+          <th>Leave Type</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Duration</th>
+      </tr>
+  </thead >
+  <tbody class="table-active" style="color:beige;">
+      <tr>
+      <td> {{leave.empId}}</td>
+      <td> {{leave.leavetype}}</td>
+      <td> {{leave.startdate}}</td>
+      <td> {{leave.enddate}}</td>
+      <td> {{leave.duration}}</td>
+     
+      </tr>
+  </tbody>
+</table>
+<div class="position-absolute top-50 start-50 translate-middle">
+  <button class="btn btn-danger mr-5" (click)="Back()">Back</button>
+  </div>
+</div>
+
+</div>

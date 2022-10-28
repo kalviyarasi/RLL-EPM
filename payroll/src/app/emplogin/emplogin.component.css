@@ -1,0 +1,36 @@
+ 
+.container {
+  border:none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left:40%;
+    transform: translate(-50%,-50%);
+    background: hsla(205, 46%, 30%, 1);
+    background:linear-gradient(90deg,rgb(206, 218, 226)0%,rgb(63, 60, 69)100%);
+ 
+ 
+}
+ 
+ 
+.container h1,h6{
+  color: #fff;
+}
+ 
+label{
+  color: #fff;
+}
+ 
+label{
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+h1{
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+h2{
+    color: black;
+    text-shadow: 2px 2px 4px white;
+  }

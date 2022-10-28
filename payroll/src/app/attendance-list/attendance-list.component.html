@@ -1,0 +1,58 @@
+<!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+    <li class = "nav-item">
+        <a href="createattendance" routerLinkActive="active" class="nav-link" >CreateAttendance</a>
+    </li>
+    
+    <div class="container">
+    
+    </div></ul></nav> <button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+
+
+<h2 style="background-color: aquamarine;text-align: center;">Employee Attendance List</h2>
+<table class ="table table-stripped">
+    <thead>
+        <tr style="background-color: rgb(6, 135, 182);padding: 0px;">
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employ of attend">
+        <td> {{employ.empId}}</td>
+        <td> {{employ.date}}</td>
+        <td> {{employ.status}}</td>
+        <td>
+            <button >Delete</button>
+        </td>
+        </tr>
+    </tbody>
+</table>
+<a href="loginsuccess" style="font-size: 22px; font-family: 'Times New Roman', Times, serif;">Back</a> -->
+
+<div class="content">
+    <nav class="navbar navbar-light ">
+        <a class="navbar-brand" style="font-family: 'Prompt', sans-serif;font-size: 40px;">Employee Attendance list</a>
+        <a class="nav-item nav-link catt" a href="createattendance" routerLinkActive="active"><button class="btn btn-primary">Create Attendance</button></a>
+        <a class="nav-item nav-link" href="loginsuccess"><button class="btn btn-primary" style="width:130px">Back</button></a>
+    </nav>
+    <table class="table">
+        <thead class="thead-dark" style="letter-spacing: 2px">
+          <tr>
+            <th scope="col">Employee ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Status</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let employ of attend">
+            <td>{{employ.empId}}</td>
+            <td> {{employ.date}}</td>
+            <td>{{employ.status}}</td>
+            <td style="text-align: left; padding-left:20px"><button (click)=deleteEmployee(employ.empId) style="border: none; color:red;background-color: rgba(255, 255, 255, 0);"><i class="fa fa-window-close closebtns" aria-hidden="true"></i></button></td>
+          </tr>
+        </tbody>
+    </table>
+</div>

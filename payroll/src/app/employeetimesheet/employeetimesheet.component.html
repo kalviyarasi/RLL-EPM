@@ -1,0 +1,93 @@
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://www.employmenthelp.org/wp-content/uploads/Seccond-Career-Header-Background.png');
+    height: 100vh; background-repeat: no-repeat; background-size: cover; width:100%; background-attachment: fixed;">
+ 
+<br>
+<br>
+<h2 align="center" style="font-weight:bold; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">Timesheet List</h2>
+<br>
+<br>
+<div class="container-fluid">
+<table class="table mr-3">
+  <thead class="thead-dark">
+    <tr>
+      <th>EmpId</th>
+      <th>Date</th>
+      <th>InTime</th>
+      <th>OutTime</th>
+      <th>RegularTime</th>
+      <th>BreakTime</th>
+      <th>OverTimeHours</th>
+      <th>TotalHours</th>
+    </tr>
+  </thead>
+  <tbody class="table-active" style="color:white;">
+    <tr >
+        <td>{{timesheet.empId}}</td>
+        <td>{{timesheet.date}}</td>
+        <td>{{timesheet.inTime}}</td>
+        <td>{{timesheet.outTime}}</td>
+        <td>{{timesheet.regularTime}}</td>
+        <td>{{timesheet.breakTime}}</td>
+        <td>{{timesheet.overtimeHours}}</td>
+        <td>{{timesheet.totalHours}}</td>
+       
+ 
+    </tr>
+  </tbody>
+</table>
+</div>
+ 
+<div class="position-absolute top-50 start-50 translate-middle">
+  <button class="btn btn-danger mr-5" (click)="Back()">Back</button>
+  </div>
+ 
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <h2>Timesheet List</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>EmpId</th>
+      <th>Date</th>
+      <th>InTime</th>
+      <th>OutTime</th>
+      <th>RegularTime</th>
+      <th>BreakTime</th>
+      <th>OverTimeHours</th>
+      <th>TotalHours</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr >
+        <td>{{timesheet.empId}}</td>
+        <td>{{timesheet.date}}</td>
+        <td>{{timesheet.inTime}}</td>
+        <td>{{timesheet.outTime}}</td>
+        <td>{{timesheet.regularTime}}</td>
+        <td>{{timesheet.breakTime}}</td>
+        <td>{{timesheet.overtimeHours}}</td>
+        <td>{{timesheet.totalHours}}</td>
+        <td>
+        </td>
+
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-danger" (click)="Back()">Back</button> -->

@@ -1,0 +1,112 @@
+<div class="wrapper">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3 class="text-center" style="font-size: 50px;">EPM</h3>
+            
+        </div>
+        <ul class="list-unstyled components text-left">
+            <li class="active">
+                
+                <a href="Admins" routerLinkActive="active">Employee List</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a >Home 1</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="createemployee" routerLinkActive="active">Create Employee</a>
+            </li>
+            <li>
+                <a href="empattendance" routerLinkActive="active">Employee Attendance</a>
+            </li>
+            <li>
+                <a href="timesheetlist" routerLinkActive="active">TimeSheet</a>
+            </li>
+            <li>
+                <a  href="schedulelist" routerLinkActive="active">Schedule List</a>
+            </li>
+            <li>
+                <a href="leavelist" routerLinkActive="active">Leave details</a>
+            </li>
+            <li>
+                <a href="salarylist" routerLinkActive="active">Salary</a>
+            </li>
+            
+        </ul>
+        <ul>
+        <li style="margin-top:30px; margin-right: 44%; list-style-type: none;">
+            <button  class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+        </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content">
+        <div class="emlis">
+            <h2 style="font-family: 'Prompt', sans-serif;font-size:35px;text-align: center;padding-top: 34.5px;padding-bottom: 35px; padding-right:400px;padding-left:400px;">Employee List</h2>
+        </div>
+        
+<table class="table table-stripped">
+    <thead>
+        <tr style="background-color: rgba(122, 112, 131, 0.664);">
+            <th>EmployeeNumber</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th style="padding-right: 50px ;">DOB</th>
+            <th>Gender</th>
+            <th>Street</th>
+            <th style="padding-right: 30px ;">Location</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Pincode</th>
+            <th>Mobno</th>
+            <th>EmailId</th>
+            <th>Designation</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+ <tbody>
+    <tr *ngFor = "let admin of Admins" >
+        <td> {{admin.empId}} </td>
+        <td> {{admin.fName}} </td>
+        <td> {{admin.lName}} </td>
+        <td> {{admin.dob}} </td>
+        <td> {{admin.gender}} </td>
+        <td> {{admin.street}} </td>
+        <td> {{admin.location}} </td>
+        <td> {{admin.city}} </td>
+        <td> {{admin.state}} </td>
+        <td> {{admin.pincode}} </td>
+        <td> {{admin.mobNo}} </td>
+        <td> {{admin.emailId}} </td>
+        <td> {{admin.designation}} </td>
+        <td>
+            <button style="width: 70px;display: inline-flex;justify-content: center;align-items: center;" (click)= "updateEmployee(admin.empId)" class="btn btn-info">Update</button>&nbsp;&nbsp;
+            <button style="width: 70px;display: inline-flex;justify-content: center;align-items: center;" (click)= "deleteEmployee(admin.empId)" class="btn btn-danger" >Delete</button>
+
+        </td>
+        </tr>
+ </tbody>
+</table>
+
+    </div>
+
+</div> 
+
+
+
+
+
+
+
+
+
+    
+    <h1 class="text-center" style="align-items: center;"> {{title}} </h1>
+    <div class="container">
+        <router-outlet></router-outlet>
+    
+    </div>

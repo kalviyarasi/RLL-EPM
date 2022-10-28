@@ -1,0 +1,66 @@
+.container-fluid
+{
+  background-image: url("../../assets/ad reg.jpg");
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+.container-fluid::after
+{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.381);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.adjustcom
+{
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+form .placead
+{
+  padding-left: 5px;
+  letter-spacing: 1px;
+  font-size: large;
+  font-weight: bold;
+}
+
+form
+{
+  margin-top: 47px;
+}
+
+.btns
+{
+  margin-top: 30px;
+  margin-left: 43.5%;
+  font-size: large;
+  margin-right: 10px;
+}
+
+.container
+{
+  position: absolute;
+  top: 5%;
+  left: 27%;
+  padding-bottom: 10px;
+  background-color: rgba(240, 248, 255, 0.463);
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.acb
+{
+  margin-left: 44%;
+}

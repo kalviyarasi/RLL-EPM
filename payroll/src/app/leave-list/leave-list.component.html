@@ -1,0 +1,66 @@
+<div class="content">
+    <nav class="navbar navbar-light ">
+        <a class="navbar-brand" style="font-family: 'Prompt', sans-serif;font-size: 40px;">Employee Leave Details list</a>
+        <a class="nav-item nav-link catt" a href="createleave" routerLinkActive="active"><button class="btn btn-primary" style="width:130px">Create Leave</button></a>
+        <a class="nav-item nav-link" href="loginsuccess"><button class="btn btn-primary" style="width:130px">Back</button></a>
+    </nav>
+    <table class="table">
+        <thead class="thead-dark" style="letter-spacing: 2px">
+          <tr>
+            <th scope="col">Employee Id</th>
+            <th scope="col">Leave Type</th>
+            <th scope="col">Start Date</th>
+            <th scope="col">End Date</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let leave of leaves">
+            <td> {{leave.empId}}</td>
+            <td> {{leave.leavetype}}</td>
+            <td> {{leave.startdate}}</td>
+            <td> {{leave.enddate}}</td>
+            <td> {{leave.duration}}</td>
+            <td style="text-align: left; padding-left:20px"><button (click) = "deleteLeave(leave.empId)"style="border: none; color:red;background-color: rgba(255, 255, 255, 0);"><i class="fa fa-window-close closebtns" aria-hidden="true"></i></button></td>
+          </tr>
+        </tbody>
+    </table>
+<!-- 
+
+
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+    <li class = "nav-item">
+        <a href="createleave" routerLinkActive="active" class="nav-link" >Createleave</a>
+    </li></ul></nav><button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+
+<h2>Leave List of Employees</h2>
+
+<table class ="table table-stripped">
+    <thead style="border: 2px;background-color: blueviolet;">
+        <tr>
+            <th>EmpId</th>
+            <th>Leave Type</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Duration</th>
+            <th>Action</th>
+
+        </tr>
+    </thead>
+    <tbody style="border: 2px;background-color: beige;">
+        <tr *ngFor = "let leave of leaves">
+        <td> {{leave.empId}}</td>
+        <td> {{leave.leavetype}}</td>
+        <td> {{leave.startdate}}</td>
+        <td> {{leave.enddate}}</td>
+        <td> {{leave.duration}}</td>
+        <td>
+            <button (click) = "deleteLeave(leave.empId)" class = "btn btn-danger">Delete</button>
+        </td>
+        </tr>
+    </tbody>
+</table>
+&nbsp;&nbsp;&nbsp;<a href="loginsuccess">Back</a> -->

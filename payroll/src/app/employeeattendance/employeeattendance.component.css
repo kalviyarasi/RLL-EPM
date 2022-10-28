@@ -1,0 +1,10 @@
+ 
+ 
+h2{
+  color: black;
+  text-shadow: 2px 2px 4px white;
+}
+td {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}

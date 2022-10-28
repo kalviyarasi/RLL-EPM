@@ -1,0 +1,79 @@
+<div class="content">
+    <nav class="navbar navbar-light ">
+        <a class="navbar-brand" style="font-family: 'Prompt', sans-serif;font-size: 40px;">Work Schedule</a>
+        <a class="nav-item nav-link catt" a href="createschedule" routerLinkActive="active"><button class="btn btn-primary">Create Schedule</button></a>
+        <a class="nav-item nav-link" href="loginsuccess"><button class="btn btn-primary" style="width:130px">Back</button></a>
+    </nav>
+    <table class="table">
+        <thead class="thead-dark" style="letter-spacing: 2px">
+          <tr>
+            
+            <th scope="col">Employee ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Shift</th>
+            <th scope="col">Starting time</th>
+            <th scope="col">Ending time</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Action</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = "let employee of Schedule">
+           <td>{{employee.empId}}</td>
+            <td>{{employee.date}}</td>
+            <td> {{employee.shift}}</td>
+            <td>{{employee.startingTime}}</td>
+            <td>{{employee.endTime}}</td>
+            <td>{{employee.duration}}</td>
+            <td>
+                <button style="width: 70px;display: inline-flex;justify-content: center;align-items: center;" (click)= "updateSchedule(employee.empId)" class="btn btn-info">Update</button>&nbsp;&nbsp;
+            <button style="width: 70px;display: inline-flex;justify-content: center;align-items: center;" (click)= "deleteSchedule(employee.empId)" class="btn btn-danger" >Delete</button>
+
+            </td>
+          </tr>
+        </tbody>
+    </table>
+
+
+<!-- 
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+    <li class = "nav-item">
+        <a href="createschedule" routerLinkActive="active" class="nav-link" >createschedule</a>
+    </li>
+    
+    <div class="container">
+    
+    </div></ul></nav><button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+<h2>Work Schedule</h2>
+<table class ="table table-stripped">
+    <thead style="border: 2px; background-color: blueviolet;max-width: 600px;">
+        <tr>
+            <th>EmpId</th>
+            <th>Date</th>
+            <th>Shift</th>
+            <th>StartingTIme</th>
+            <th>EndingTIme</th>
+            <th>Duration</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of Schedule">
+        <td> {{employee.empId}}</td>
+        <td> {{employee.date}}</td>
+        <td> {{employee.shift}}</td>
+        <td> {{employee.startingTime}}</td>
+        <td>{{employee.endTime}}</td>
+        <td>{{employee.duration}}</td>
+        <td>
+
+            <button (click) = "updateSchedule(employee.empId)" class = "btn btn-info"> Update</button>
+            <button (click) = "deleteSchedule(employee.empId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+&nbsp;&nbsp;&nbsp;<a href="loginsuccess">Back</a> -->

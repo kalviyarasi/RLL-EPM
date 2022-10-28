@@ -1,0 +1,88 @@
+<div class="container-fluid">
+<div class="col-md-6 offset-md-3 container">
+    <h3 class="text-center mb-4 pt-3" style="font-family: 'Prompt', sans-serif;font-size: 40px;">Update employee details</h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label  class="labl">Employee Id</label><input type="text" class="form-control infor" id="empId"
+                [(ngModel)] = "employee.empId" name ="empId" disabled>
+        </div>
+
+    <div class="form-group">
+        <label  class="labl">First Name</label><input type="text" class="form-control infor" id="firstName"
+            [(ngModel)] = "employee.fName" name ="firstName">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Last Name</label><input type="text" class="form-control infor" id="LastName"
+            [(ngModel)] = "employee.lName" name ="LastName">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Date of birth</label><input type="text" class="form-control infor" id="dob"
+            [(ngModel)] = "employee.dob" name ="dob">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Gender</label><input type="text" class="form-control infor" id="gender"
+            [(ngModel)] = "employee.gender" name ="gender">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">street</label><input type="text" class="form-control infor" id="street"
+            [(ngModel)] = "employee.street" name ="street">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Location</label><input type="text" class="form-control infor" id="location"
+            [(ngModel)] = "employee.location" name ="location">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">City</label><input type="text" class="form-control infor" id="city"
+            [(ngModel)] = "employee.city" name ="city">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">State</label><input type="text" class="form-control infor" id="state"
+            [(ngModel)] = "employee.state" name ="state">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Pincode</label><input type="text" class="form-control infor" id="pincode"
+            [(ngModel)] = "employee.pincode" name ="pincode">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Mobile no</label><input type="text" class="form-control infor" id="mobNo"
+            [(ngModel)] = "employee.mobNo" name ="mobNo">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">EmailId</label><input type="text" class="form-control infor" id="emailId"
+            [(ngModel)] = "employee.emailId" name ="emailId">
+    </div>
+    
+    <div class="form-group">
+        <label  class="labl">Password</label><input type="password" class="infor form-control" id="password"
+            [(ngModel)] = "employee.password" name ="password" disabled>
+    </div>
+
+    <div class="form-group">
+        <label  class="labl mr-5 mt-2">Designation</label><!--<input type="text" class=" infor form-control" id="designation"
+            [(ngModel)] = "employee.designation" name ="designation"> -->
+            <select id="designation"  [(ngModel)] ="employee.designation"  name="designation" required>
+                <option value="Manager">Manager</option>
+                <option value="Developer">Developer</option>
+                <option value="Test engineer">Test engineer</option>
+                <option value="Test lead">Test lead</option>
+                <option value="Business analyst">Business analyst</option>
+                <option value="Data analyst">Data analyst</option>
+              </select>
+    </div>
+    
+    <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+    </div>
+    
+</div>

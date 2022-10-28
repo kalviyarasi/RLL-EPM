@@ -1,0 +1,110 @@
+
+<div class="content">
+  <nav class="navbar navbar-light ">
+      <a class="navbar-brand" style="font-family: 'Prompt', sans-serif;font-size: 40px;">Employee Salary list</a>
+      <a class="nav-item nav-link catt"><button style="width:130px" (click)="goToAddSalary()" class="btn btn-primary">Add Salary</button></a>
+      <a class="nav-item nav-link" href="loginsuccess"><button class="btn btn-primary" style="width:130px">Back</button></a>
+  </nav>
+  <table class="table">
+    <thead class="thead-dark" style="letter-spacing: 2px">
+      <tr>
+        <th scope="col">Salary ID</th>
+        <th scope="col">Employee Id</th>
+        <th scope="col">Basic pay</th>
+        <th scope="col">Dearness Allowance</th>
+        <th scope="col">House Rent Allowance</th>
+        <th scope="col">Gross Salary</th>
+        <th scope="col">Provident Fund</th>
+        <th scope="col">Tax</th>
+        <th scope="col">Deduction</th>
+        <th scope="col">NetPay</th>
+        <th scope="col">Transaction date</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="salary.length ===0">
+        <td colspan="12" style="text-align: center;color: rgba(0, 0, 0, 0.722);"><h2>No employee Salary yet</h2></td>
+      </tr>
+      <tr *ngFor="let sal of salary">
+        <th >{{sal.salId}}</th>
+        <td>{{sal.empId}}</td>
+        <td>{{sal.basicPay}}</td>
+        <td>{{sal.da}}</td>
+        <td>{{sal.hra}}</td>
+        <td>{{sal.grossSalary}}</td>
+        <td>{{sal.pfAmount}}</td>
+        <td>{{sal.tax}}</td>
+        <td>{{sal.deduction}}</td>
+        <td>{{sal.netPay}}</td>
+        <td>{{sal.tranDate}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="goToEditSalary(sal.salId)" style="display:inline-flex; justify-content:center;width: 40px; font-size: 10px;" >Edit</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-info" (click)="goToViewSalary(sal.salId)" style="width: 40px; font-size: 10px;display:inline-flex; justify-content:center;">View</button>&nbsp;&nbsp;
+          <button (click)="deleteSalary(sal.salId)" style="margin-top:3px;border: none;color:red;background-color: rgba(255, 255, 255, 0);"><i class="fa fa-window-close closebtns" aria-hidden="true"></i></button>
+        </td>
+         </tr>
+    </tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+<!-- 
+<button class="btn btn-danger" type="submit" (click)="Logout()" style="float: right;">Logout</button>
+<div class="container">
+  <div style="background-color: blue;">
+    <h2>Salary list</h2>
+    <p>Monthly salary list of employees</p>
+    <button type="button" class="btn btn-success" (click)="goToAddSalary()">Add Salary</button>
+  </div>
+    <table class="table">
+      <thead class="cont">
+      <tr>
+        <th scope="col">Salary ID</th>
+        <th scope="col">Employee Id</th>
+        <th scope="col">Basic pay</th>
+        <th scope="col">Dearness Allowance</th>
+        <th scope="col">House Rent Allowance</th>
+        <th scope="col">Gross Salary</th>
+        <th scope="col">Provident Fund</th>
+        <th scope="col">Tax</th>
+        <th scope="col">Deduction</th>
+        <th scope="col">NetPay</th>
+        <th scope="col">Transaction date</th>
+        <th scope="col">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngIf="salary.length ===0">
+        <td colspan="5" style="text-align: center"><h2>No employee Salary yet</h2></td>
+      </tr>
+      <tr *ngFor="let sal of salary">
+        <th >{{sal.salId}}</th>
+        <td>{{sal.empId}}</td>
+        <td>{{sal.basicPay}}</td>
+        <td>{{sal.da}}</td>
+        <td>{{sal.hra}}</td>
+        <td>{{sal.grossSalary}}</td>
+        <td>{{sal.pfAmount}}</td>
+        <td>{{sal.tax}}</td>
+        <td>{{sal.deduction}}</td>
+        <td>{{sal.netPay}}</td>
+        <td>{{sal.tranDate}}</td>
+        <td>
+          <button type="button" class="btn btn-primary" (click)="goToEditSalary(sal.salId)" >Edit</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-info" (click)="goToViewSalary(sal.salId) ">View</button>&nbsp;&nbsp;
+          <button type="button" class="btn btn-danger" (click)="deleteSalary(sal.salId)">Delete</button>
+        </td>
+         </tr>
+    
+      </tbody>
+    </table>
+    
+    </div>
+    &nbsp;&nbsp;&nbsp;<a href="loginsuccess">Back</a>
+     -->
